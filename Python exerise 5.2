@@ -1,0 +1,18 @@
+largest = None
+smallest= None
+while True:
+    num = input('Enter a number,Enter done as end:')
+    try:
+        if num == "done" :break
+        value=int(num)
+        if value>largest:
+            largest=value
+            
+        if smallest==None or value<smallest:
+            smallest = value
+
+    except:
+        print('Invalid input')
+
+print ("Maximum is", largest)
+print ('Minimum is', smallest)
